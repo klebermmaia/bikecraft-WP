@@ -45,7 +45,9 @@ Essa função adiciona o caminho até a raiz do tema
 Adicionar antes de fechar o head: <?php wp_head(); ?>
 Adicionar antes de fechar o body: <?php wp_footer(); ?>
 Adicionar o header e footer nas páginas do site e mudá-las para .php
-Com <?php get_header(); ?> e <?php get_footer(); ?>
+Com <?php get_header(); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> e <?php get_footer(); ?>
+<?php endwhile; else: endif; ?>
 
 8 - Começar a substituir o conteúdo por funções de Wordpress
 
@@ -92,6 +94,21 @@ Adicionar o conteúdo a interface do Custom Fields.
 	the_sub_field('nomedocampo');
 
 <?php endwhile; else : endif; ?>
+
+13.1 - Repeater Field CMB2
+<?php
+	$menu = get_field('menu-left');
+	if ( isset($menu) ) { foreach ( $menu as $item ) {
+?>
+	<li>
+		<span><sup>R$</sup><?php echo $item['preco'] ?></span>
+		<div>
+		<h3><?php echo $item['nome'] ?></h3>
+		<p><?php echo $item['descricao'] ?></p>
+		</div>
+	</li>
+<?php } } ?>
+
 
 14 - Pegar valores de outras páginas
 
