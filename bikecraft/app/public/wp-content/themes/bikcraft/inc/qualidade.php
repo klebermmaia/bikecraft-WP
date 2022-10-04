@@ -1,17 +1,17 @@
 <?php
-    $id_sobre = get_page_by_title('sobre');
+    $sobreID = get_page_by_title('sobre')->ID;
 ?>
 <section class="qualidade container">
 	<h2 class="subtitulo">Qualidade</h2>
 	<img src="<?php echo get_template_directory_uri(); ?>/img/bikcraft-qualidade.png" alt="Bikcraft">
 	<ul class="qualidade_lista">
         <?php
-            $qualidade = get_field('qualidae', $id_sobre);
+            $qualidade = get_field('qualidade', $sobreID);
             if ( isset($qualidade) ) { foreach ( $qualidade as $item ) {
         ?>
             <li class="grid-1-3">
-                <h3><?php echo $item['titilo-item-qualidade'] ?></h3>
-                <p><?php echo $item['descricao-item-qualidade'] ?></p>
+                <h3><?php echo $item['titilo-item-qualidade']; ?></h3>
+                <p><?php echo $item['descricao-item-qualidade']; ?></p>
             </li>
         <?php } } ?>
 		<!-- <li class="grid-1-3">
