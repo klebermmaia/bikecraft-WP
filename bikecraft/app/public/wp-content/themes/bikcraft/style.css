@@ -6,8 +6,8 @@ Author URI: http://klebermaia.com/
 Description: Tema criado para loja de bicicletas feitas a mão. 
 Version: 1.0
 */
-@import url(css/reset.css);
 @import url(css/normalize.css);
+@import url(css/reset.css);
 @import url(css/contato.css);
 @import url(css/grid.css);
 @import url(css/portfolio.css);
@@ -15,6 +15,10 @@ Version: 1.0
 @import url(css/responsivo.css);
 @import url(css/sobre.css);
 
+/* Estilos ADM WordPress */
+.customize-support .header{
+	margin-top: 32px;
+}
 
 /* Estilos Gerais */
 body {

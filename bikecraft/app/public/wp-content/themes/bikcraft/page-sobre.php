@@ -23,7 +23,7 @@
 			</div>
 
 			<div class="grid-16 foto-equipe">
-				<img src="img/equipe-bikcraft.jpg" alt="Equipe Bikcraft">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/equipe-bikcraft.jpg" alt="Equipe Bikcraft">
 			</div>
 
 		</section>

@@ -26,9 +26,9 @@
 					<div class="grid-4 footer_redes">
 						<h3>Contato</h3>
 						<ul>
-							<li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.png" alt="Facebook Bikcraft"></a></li>
-							<li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.png" alt="Instagram Bikcraft"></a></li>
-							<li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.png" alt="Twitter Bikcraft"></a></li>
+							<li><a href="http://facebook.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/redes-sociais/facebook.png" alt="Facebook Bikcraft"></a></li>
+							<li><a href="http://instagram.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/redes-sociais/instagram.png" alt="Instagram Bikcraft"></a></li>
+							<li><a href="http://twitter.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/redes-sociais/twitter.png" alt="Twitter Bikcraft"></a></li>
 						</ul>
 					</div>
 
@@ -45,8 +45,8 @@
 	<!-- JavaScript -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.11.2.min.js"><\/script>')</script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 	<!-- JavaScript -->
 
 	<script>

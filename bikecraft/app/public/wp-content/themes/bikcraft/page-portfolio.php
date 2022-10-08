@@ -1,5 +1,5 @@
 <?php
-// Template Name: Portifolio
+// Template Name: portfolio
 ?>
 <?php get_header(); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -33,7 +33,7 @@
 
 		<section class="portfolio">
 			<div class="container">
-			<?php include(TEMPLATEPATH . '/inc/nosso-portifolio.php' ); ?>
+			<?php include(TEMPLATEPATH . '/inc/nosso-portfolio.php' ); ?>
 			</div>
 		</section>
 
