@@ -32,6 +32,12 @@ function cmb2_fields_geral(){
         'options'=>[
             'url'=> false,
         ],
+        'query_args'=>[
+            'type'=> [
+                'image/jpeg',
+                'image/png'
+            ]
+        ]
     ]);
 }
 
@@ -206,6 +212,12 @@ function cmb2_fields_portfolio(){
         ],
     ]);
 }
+// Tamanhos de Imagem personalizavel
+function my_custom_sizes(){
+    add_image_size('large', 1400, 380, true);
+    add_image_size('medium', 768, 380, true);
+}
+add_action('after_setup_theme', 'my_custom_sizes');
 
 // Funções para Limpar o Header
 remove_action('wp_head', 'rsd_link');
